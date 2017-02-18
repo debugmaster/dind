@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:latest
 MAINTAINER camilo@camilo.fm
 
 # Install the magic wrapper.
