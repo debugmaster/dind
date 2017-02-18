@@ -92,7 +92,7 @@ if [[ $DOCKER_DAEMON_ARGS != *"-l "* &&
 	  $DOCKER_DAEMON_ARGS != *"--log-level "* ]]; then
 	DOCKER_DAEMON_ARGS="$DOCKER_DAEMON_ARGS --log-level error"
 fi
-echo $DOCKER_DAEMON_ARGS
+
 # If we were given a PORT environment variable, start as a simple daemon;
 # otherwise, spawn a shell as well
 if [ "$PORT" ]
