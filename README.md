@@ -7,6 +7,10 @@ This recipe lets you run Docker within Docker.
 There is only one requirement: your Docker version should support the
 `--privileged` flag.
 
+**Caution:** AppArmor features have been disabled to reduce image size. If you
+need them back, please run `apt-get install apparmor` in your image. No warning
+or error will be raised.
+
 
 ## A word of warning
 
@@ -22,7 +26,7 @@ first. Thank you!
 This work is now obsolete, thanks to the [combined](
 https://github.com/docker/docker/pull/15596) [efforts](
 https://github.com/docker-library/official-images/blob/master/library/docker)
-of some amazing people like @jfrazelle and @tianon, who also 
+of some amazing people like @jfrazelle and @tianon, who also
 are black belts in the art of putting IKEA furniture together.
 
 If you want to run Docker-in-Docker today, all you need to do is:
